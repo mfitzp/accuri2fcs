@@ -96,7 +96,7 @@ def main():
 
     temppath = os.path.join( tempfile.gettempdir(), 'accuri2fcs') 
     
-    sample_re = re.compile('\$SAMPLEIDENTIFIER/(?P<id>[A-Z][0-9])/\$SAMPLENAME/(?P<name>.*?)/', re.IGNORECASE)
+    sample_re = re.compile('\$SAMPLEIDENTIFIER/(?P<id>[A-Z][0-9]+)/\$SAMPLENAME/(?P<name>.*?)/', re.IGNORECASE)
     
     # Support multiple patterns for incomplete labels (AARGH!)
     name_res = []
